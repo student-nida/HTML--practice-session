@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Artical</title>
+   
+</head>
+<body>
+    <h1>My School</h1>
+    <hr>
+      <p>
+        My school was a wonderful place to learn new things.
+        I love my school very much.
+      </p>
+
+     <h2>About My School</h2>
+    <p>
+        My school has many classrooms, a library,
+        a playground, and a computer lab.
+    </p>
+
+    <h2>My Favourite Subjects</h2>
+    <ul>
+        <li>English</li>
+        <li>Mathematics</li>
+        <li>Science</li>
+        <li>Computer</li>
+    </ul>
+
+    <h2>My Daily Routine</h2>
+    <ol>
+        <li>Wake up early</li>
+        <li>Go to school</li>
+        <li>Attend classes</li>
+        <li>Come home and study</li>
+    </ol>
+
+    <h2>My Teachers</h2>
+    <p>
+        My teachers was helpful and friendly.
+        They teach us new things every day.
+    </p>
+
+    <h2>More Information</h2>
+    <p>
+        Visit
+        <a href="https://en.wikipedia.org/wiki/School">
+            Wikipedia - School
+        </a>
+        to learn more about schools.
+    </p>
+
+</body>
+</html>
