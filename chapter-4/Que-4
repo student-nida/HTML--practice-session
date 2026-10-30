@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Score</title>
+</head>
+<body>
+    <h1>Players Score</h1>
+    <table border="1">
+        <tr>
+            <th>Player Name</th>
+            <th>Runs</th>
+        </tr>
+        <tr>
+            <td>Kaif</td>
+            <td>45</td>
+        </tr>
+         <tr>
+            <td>saif</td>
+            <td>50</td>
+        </tr>
+         <tr>
+            <td>zaid</td>
+            <td>70</td>
+        </tr>
+         <tr>
+            <td>shivam</td>
+            <td>35</td>
+        </tr>
+         <tr>
+            <th colspan="">Total Score:</th>
+            <th>200</th>
+        </tr>
+    </table>
+</body>
+</html>
