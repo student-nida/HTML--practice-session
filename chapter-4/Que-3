@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking vacation Form </title>
+    <style>
+        body{
+            margin: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+        <h1>Vacation Booking Form</h1>
+    <form>
+    <label for=""></label>
+    <label for="name">Name:</label>
+    <input type="text" name="" id="name" name="name" placeholder="enter your name" ><br><br>
+    <label for="email">Email:</label>
+    <input type="Email" name="email" id="email" placeholder="email"><br><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" name="phone" id="phone"  placeholder="phone number"><br><br>
+    <label for="date">Travel Date:</label>
+    <input type="date" name="date" id="date" ><br><br>
+    <label for="people">No. of Travelers:</label>
+    <input type="number" name="people" id="people" min="1" placeholder="people"><br><br>
+    <label for="package">Vacation Package:</label>
+    <select id="option">
+        <option>Budget</option>
+        <option>Standard</option>
+        <option>Luxury</option>
+    </select>
+    <br>
+    <br>
+   <input type="submit" value="submit">
+   <input type="reset" value="reset">
+
+    </form>
+    
+</body>
+</html>
