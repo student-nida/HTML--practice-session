@@ -1,0 +1,61 @@
+//Que1:
+//let age = 20;
+if(age>=10 && age<=20){
+    console.log("age is between 10 and 20");
+} else{
+    console.log("age is not between 10 and 20");
+}
+
+
+//Que2:
+let num1 = 5;
+let num2 = 5;
+
+switch (5){
+   case 1:  console.log("Addition " + (num1 + num2));
+    break;
+
+    case 2:  console.log("Subtraction " + (num1 - num2));
+    break;
+
+    case 3:  console.log("Multiplication " + (num1 * num2));
+    
+    break;
+
+    case 4:  console.log("Division" + (num1 / num2));
+    break;
+
+    case 5:  console.log("Modulus: " + (num1 % num2));
+    break;
+
+    default:  console.log("invalid numbers");
+    
+
+}
+
+// Que3:
+let result = 20;
+
+if(result%2==0  && result%3==0){
+    console.log("divisible by 2");
+}
+ else {
+  console.log("not divisible by 2 and 3");
+}
+
+//Que4:
+let num = 20;
+
+if(num%2==0  || num%3==0){
+    console.log("divisible by 2");
+}
+ else {
+  console.log("not divisible by 2 and 3");
+}
+
+
+//  Que5: 
+let age = 20;
+let check = age >= 20 ? "You can drive" :  "you cannot drive";
+
+console.log(check);
