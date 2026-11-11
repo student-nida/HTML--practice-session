@@ -1,0 +1,60 @@
+// Que1:
+
+let arr = [];
+let n = Number(prompt("How many number do you want to add? "));
+
+for(let i=0; i<n; i++){
+    let num = Number(prompt("Enter the number"));
+    arr.push(num);
+}
+
+console.log("array:", arr);
+
+// Que2
+
+let arr = [];
+
+while (true) {
+    let num = Number(prompt("Enter a number:"));
+
+    if (num === 0) {
+        break;
+    }
+
+    arr.push(num);
+}
+
+console.log("Final Array:", arr);
+
+// Que3:
+// let arr = [10, 15, 20, 25, 30, 35, 40, 45];
+
+let result = arr.filter((num) => {
+    return num % 10 === 0;
+});
+
+console.log(result);
+
+//Que4:
+let a = [2, 3, 4, 5, 6];
+
+let squares = a.map((num) => {
+    return num * num;
+});
+
+console.log(squares);
+
+// Que5:
+//let n = 5;
+
+//let arr = [];
+
+for (let i = 1; i <= n; i++) {
+    arr.push(i);
+}
+
+let factorial = arr.reduce((a, b) => {
+    return a * b;
+});
+
+console.log("Factorial:", factorial);
