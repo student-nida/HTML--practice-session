@@ -1,0 +1,38 @@
+// Que1:
+  let name = "nida";
+ let num = name  + 10;
+console.log(num);
+//  Que2:
+console.log(typeof num);
+
+
+// Que3: 
+
+const nida = {
+    name: "nida",
+    rollNo: 21
+
+}
+
+
+
+nida.rollNo = 40;
+console.log(nida);
+ 
+// Que4:
+nida.city = "Bulandshahr";
+console.log(nida);
+
+// Que5:
+
+
+const dictionary = {
+    Rapacious: "Aggresive, Greedy",
+    Uxorious: "having or showing a great or excessive fondness for one! wife",
+    Kowtow: "To show too much respect to someone in authority",
+    Toofani: "a lot of noise, confusion",
+    Produclivity: "An inclination or predisposition toward  something"
+
+} 
+
+console.log(dictionary);
