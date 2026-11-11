@@ -1,0 +1,21 @@
+// Que1:
+
+console.log("har\"".length);
+
+
+// Que2:
+let name = "Hello world";
+console.log(name.includes("world"));
+console.log(name.startsWith("Hello"));
+console.log(name.endsWith("Hello"));
+
+// Que3:
+console.log("HI NIDA".toLowerCase());
+
+// Que4:
+console.log("Please give Rs 1000".slice(15));
+
+// Que5:
+  let name1 = "nida";
+  name1[3] = "6"
+console.log(name1)
