@@ -1,0 +1,187 @@
+// SETTIMEOUT
+
+ //Que1
+
+ setTimeout(function(){
+    console.log("Good Morning");
+ }, 2000);
+
+
+ //Que2
+ console.log("One");
+
+ setTimeout(function(){
+    console.log("Two");
+ }, 3000);
+ console.log("Three");
+
+
+ //Que3:
+
+ setTimeout(function(){
+    console.log("HTML");
+ }, 1000);
+
+ setTimeout(function(){
+    console.log("CSS");
+ }, 2000);
+
+ setTimeout(function(){
+    console.log("JavaScript");
+ }, 3000);
+
+
+ //Que4:
+ function welcome(){
+    setTimeout(function(){
+        console.log("Welcome to JavaScript");
+    },  2000);
+ }
+
+ welcome();
+
+
+ // NEXT LEVEL setTimeout() Practice
+ // Que1:
+ function showMessage(){
+    setTimeout(function(){
+        console.log("Learning JavaScript");
+    }, 2000);
+ }
+
+ showMessage();
+
+ //Que2:
+
+ console.log("Start");
+ setTimeout(function(){
+    console.log("Step 1");
+ }, 1000);
+  setTimeout(function(){
+    console.log("Step 2");
+ }, 2000);
+  setTimeout(function(){
+    console.log("Step 3");
+ }, 3000);
+
+
+ // Que3
+ function add(a,b){
+    setTimeout(function(){
+       console.log(a + b);
+        
+    }, 2000);
+ }
+ add(5,10);
+
+setTimeout(function(){
+    console.log("Hello");
+}, 1000);
+
+
+// Advanced Practice- level 1
+
+// Que1: Multiple timers
+
+console.log("Order Placed");
+setTimeout(function(){
+    console.log("Food Preparing");
+}, 2000);
+setTimeout(function(){
+    console.log("Food Ready");
+}, 4000);
+setTimeout(function(){
+    console.log("Order Delivered");
+}, 6000);
+
+
+// Que2: Function with parameters
+
+function userDetails(Name, age){
+    setTimeout(function(){
+        console.log(Name, age);
+    }, 3000);
+}
+userDetails("Nida", 25);
+
+//Que3: CALCULATION
+
+function calculate(a, b){
+    let addition = a + b;
+    let multiplication = a * b;
+    setTimeout(function(){
+        console.log(addition);
+    }, 2000);
+
+    setTimeout(function(){
+        console.log(multiplication);
+    }, 4000);
+
+}
+calculate(4, 5);
+
+// Que4:  Real-World problem
+function login(){
+console.log("Login Started");
+setTimeout(function(){
+    console.log("Checking Credentials");
+}, 2000);
+setTimeout(function(){
+    console.log("Login Successful");
+}, 4000);
+
+}
+login();
+
+// TOPIC JAVASCRIPT PROMISES
+  // resolve();
+let promise = new Promise(function(resolve, reject){
+    let age = 18;
+    if(age>=18){
+        resolve("Eligible");
+    }else{
+        reject("Not Eligible");
+    }
+});
+
+promise.then(function(result){
+    console.log(result);
+});
+
+//reject()
+let myPromise = new Promise(function(resolve, reject){
+    let age = 18;
+    if(age<18){
+        resolve("Eligible");
+    }else{
+        reject("Not Eligible");
+    }
+});
+
+ myPromise.catch(function(error){
+    console.log(error);
+});
+
+
+// Que2:
+
+let hiPromise = new Promise(function(resolve, reject){
+    let isLoggedIn = false;
+    if(isLoggedIn == true){
+        resolve("Login Successful");
+    }else{
+        reject("Login Failed");
+    }
+});
+
+hiPromise
+.then(function(result){
+    console.log(result);
+})
+
+
+.catch(function(error){
+    console.log(error);
+});
+
+
