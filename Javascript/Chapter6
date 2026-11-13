@@ -1,0 +1,161 @@
+//  CALLBACK FUNCTION
+
+function study(callback){
+     callback();
+}
+    function message(){
+       console.log( "I am learning Javascript");
+    
+}
+
+study(message);
+
+
+
+//  calculato with Callback
+
+//let calculator = (a, b, callback)=>{
+     let result = a + b;
+     callback(result);
+//}
+
+  let showResult= (result)=>{
+    console.log("result is:  " + result);
+  }
+
+  calculator(10,20, showResult);
+
+  // EVEN OR ODD CHECKER USING CALLBACK
+
+ let checkNumber = (number, callback) =>{
+    let result;
+    if(number % 2 ==0){
+    result  =  "Even";
+}else{
+    result =  "Odd";
+}
+
+   callback(result);
+
+ }
+
+//  function showResult(result){
+//     console.log("result is: " + result )
+//  }
+
+//  checkNumber(7, showResult);
+
+
+ let greetUser = (callback)=>{
+    console.log("Hello User");
+    callback();
+ } 
+
+ let showMessage=()=>{
+    console.log("Welcome to JavaScript");
+ }
+
+ greetUser(showMessage);
+
+  let studentDetails = (name, callback) =>{
+     console.log("student Name is: " + name);
+     callback()
+  }
+  function studentClass(){
+      console.log("student class: 10th")
+     };
+  
+     studentDetails("nida",  studentClass);
+
+ let userDetails = (name, callback) =>{
+     console.log("User Name is: " + name);
+     callback()
+  }
+  function userAge(){
+      console.log("user Age: 20")
+     };
+  
+     userDetails("nida",  userAge);
+
+  
+// //let student = {
+//     name: "Rahul",
+//     age: "20",
+//     city: "Delhi",
+  
+
+// //};
+console.log(student.name, student.age, student.city);
+
+
+let mobile = {
+    brand: "Samsung",
+    price: "1500",
+    color: "Black",
+    model: "Galaxy M14"
+};
+
+console.log(mobile.brand, mobile.price, mobile.color, mobile.model);
+
+let employee = {
+    name: "Amit",
+    age: 25,
+    salary: 3000,
+    department: "IT"
+}
+
+  employee.salary = 35000;
+ console.log(employee.name, employee.salary);
+   
+
+ let calculator = {
+    num1: 10,
+    num2: 20,
+    add: function(){
+      console.log(this.num1 + this.num2);
+
+   },
+
+    subtract: function(){
+        console.log(this.num1 - this.num2);
+    },
+
+   multiplication : function(){
+        console.log(this.num1 * this.num2);
+    }
+ }
+
+ calculator.add();
+ calculator.subtract();
+ calculator.multiplication();
+
+
+ let student = {
+    name: "Rahul",
+    marks: 85,
+    subject: "JavaScript",
+
+  showDetails: function(){
+     console.log("Name:", this.name,"\n", "Marks:", this.marks, "\n",  "Subject:", this.subject);
+  },
+
+  checkResult: function(){
+    let result;
+    if(this.marks>=33){
+         result ="Pass";
+    }else{
+        result = "Fail";
+    }
+
+    console.log("Result:", result);
+  }
+
+
+ };
+
+ student.showDetails();
+ student.checkResult();
+
+
+
+ 
